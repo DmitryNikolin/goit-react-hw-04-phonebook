@@ -1,12 +1,12 @@
 import styles from './Filter.module.css';
 
-const Filter = ({ filter, onChange }) => {
+const Filter = ({ filter, onFilter }) => {
   return (
     <input className={styles.filter}
       type="text"
       name="filter"
       value={filter}
-      onChange={({ target }) => onChange(target.value)}
+      onChange={ onFilter }
       placeholder="Enter name for Search"
     />
   );
